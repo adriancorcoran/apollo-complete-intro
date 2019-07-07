@@ -10,7 +10,8 @@ import App from "./App";
 const credentials = require("./credentials");
 
 const httpLink = createHttpLink({
-  uri: "https://api.github.com/graphql"
+  // uri: "https://api.github.com/graphql"
+  uri: "http://localhost:4000/graphql"
 });
 
 const authLink = setContext((_, { headers }) => {
